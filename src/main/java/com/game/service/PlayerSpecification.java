@@ -38,12 +38,6 @@ public class PlayerSpecification {
         return specification;
     }
 
-    /*
-    SELECT * FROM player
-    WHERE name LIKE 'Vic'
-    AND race = 'ELF';
-
-     */
     private Specification<Player> createSpecification(SearchCriteria filter) {
         switch (filter.getSearchOperation()) {
             case EQUALITY:
